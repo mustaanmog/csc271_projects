@@ -1,0 +1,48 @@
+/* Mustaan Mogaji-Oleolo */
+/* Date: 10/11/2026 */
+/*  MatchWatch Home Page: A simple style sheet dedicated to the MatchWatch Home Page  --> */
+
+/* Styles */
+body {
+    font-family: 'Times New Roman';
+    background-color: rgb(190,229,176);
+    color: darkorange;
+
+    /* paragraph class specifically meant for text that is centered */
+    p.center {
+        text-align: center;
+        color:darkorange
+    }
+    /* Three ID style for aligning the links to left, center, or right*/
+    #link1{
+        text-align: center
+    }
+    #link2{
+        text-align: right
+    }
+    #link3{
+        text-align: left
+    }
+    /* heading elements for h2 and h1*/
+    h2 {
+        color: rgb(139,64,0);
+    }
+    h1 {
+        color: black
+    }
+
+}
+/* Link Styling */
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
