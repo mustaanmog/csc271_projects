@@ -5,33 +5,37 @@
 /* Styles */
 body {
     font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(190,229,176);
-    color: darkorange;
+    background-color: rgb(255,255,255);
+    color: rgb(139,64,0);
+}
 
     /* paragraph class specifically meant for text that is centered */
-    p.center {
-        text-align: center;
-        color:darkorange
-    }
-    /* Three ID style for aligning the links to left, center, or right*/
-    #link1{
-        text-align: center
-    }
-    #link2{
-        text-align: right
-    }
-    #link3{
-        text-align: left
-    }
-    /* heading elements for h2 and h1*/
-    h2 {
-        color: rgb(139,64,0);
-    }
-    h1 {
-        color: black
-    }
-
+p.center {
+    text-align: center;
+    color: rgb(139,64,0);
 }
+    /* Three ID style for aligning the links to left, center, or right*/
+#link1{
+    text-align: center
+}
+#link2{
+    text-align: right
+}
+#link3{
+    text-align: left
+}
+/* heading elements for h2 and h1*/
+h2{
+    color: rgb(139,64,0);
+}
+h1{
+    color: black
+}
+
+.center-me{
+    text-align: center;
+}
+
 /* Link Styling */
 a:link {
   color: blue;
@@ -45,4 +49,59 @@ a:visited {
 a:hover {
   color: darkorange;
   text-decoration: underline;
+}
+
+
+.header{
+  overflow: hidden;
+  padding: 5px;
+  background-color: lightgreen;
+}
+
+.header-right{
+  float: left;
+}
+
+.header-right > a{
+  color: darkgreen;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  padding: 12px;
+  text-decoration: none;
+
+}
+
+.header-right > a:hover{
+  color: purple;
+}
+
+.header-right > a:active{
+  color: green;
+  background-color: darkgray;
+}
+
+.header-right{
+  float: right;
+  margin-top: 12px;
+}
+
+.main-col{
+  float: center;
+  width: 100%;
+}
+
+/* I was raging because I couldn't figure out why my images were not displaying correctly */
+/* For this image-row style, I used this resource: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ in order to help */
+.image-row {
+    display: flex;
+    justify-content: center;   /* centers the row */
+    gap: 20px;                 /* space between images */
+}
+.card {
+    background-color: rgb(178, 251, 165);
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centers images, text, iframes */
 }

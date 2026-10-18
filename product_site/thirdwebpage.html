@@ -6,18 +6,44 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title> MatchWatch Home Page for MatchWatch </title>
+        <title> Home Page - MatchWatch </title>
         <link href="css/styles.css" type="text/css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
-        <h1> MatchWatch </h1> <img src="images/MatchWatch.png" alt="MatchWatch logo, black and green square with black watch and green checkmark." width="77" height="77" />
-            <!-- Note: This will be the only paragraph FOR NOW. Currently, the home page is a WIP in order to test my
-             css stylesheet -->
-            <p class="center">
+        <div class="header">
+            <img src="images/MatchWatch.png" alt="MatchWatch logo, black and green square with black watch and green checkmark." width="77" height="77" />
+            <div class="header-right">
+                <a href="firstwebpage.html"> About Us </a>
+                <a href="secondwebpage.html"> Form </a>
+            </div>
+        </div>
+        <h1 class="center-me"> Welcome to MatchWatch </h1>
+        <div class="main-col">
+            <div class="card">
                 MatchWatch is a mobile app that matches watches posted online that are tailored to your next fit. 
                 Matchwatch offers direct access to watches online and can even apply deals that you find online,
                 saving you, your money, and your next gathering from a total disaster!
-            </p>
-        <p> <a href="firstwebpage.html"> About MatchWatch </a></p> <p id="link2"> <a href="secondwebpage.html"> Find Your Next Match </a></p>
+            </div>
+            <h2 class="center-me">Whether you are looking for Smart Watches</h2>
+                <div class="card">
+                    <div class="image-row">
+                        <img src="images/Watch2.avif" alt="White smartwatch with various, random apps displayed on it" width="600" height="450"/>
+                        <img src="images/Watch3.jpg" alt="Black smartwatch with various, random apps displayed on it" width="600" height="450"/>    
+                    </div>
+                </div>
+            <h2 class="center-me">Or Classic Watches</h2>
+                <div class="card">
+                    <div class="image-row">
+                        <img src="images/Watch1.avif" alt="Silver metal watch" width="600" height="450"/>
+                        <img src="images/Watch4.jpg" alt="Silver and white metal watch" width="600" height="450"/>
+                    </div>
+                </div>
+            <h2 class="center-me">MatchWatch can help you find the perfect watch for any occasion!</h2>
+                <div class="card">
+                    <h2> Don't know where to start? Watch this Video!</h2>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/AdJkqGo_9Qk"></iframe>
+                </div>
+        </div>
     </body>
 </html>
