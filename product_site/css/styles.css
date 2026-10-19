@@ -124,13 +124,6 @@ a:hover {
         font-size: 1.2rem;      
     }
     
-    img {
-        max-width: 100%;        
-        height: auto;           
-        display: block;         
-        margin: 0 auto;        
-    }
-    
     .image-row {
         flex-direction: column; 
         gap: 10px;
