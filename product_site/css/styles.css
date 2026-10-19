@@ -104,3 +104,40 @@ a:hover {
     flex-direction: column;
     align-items: center;   /* centers images, text, iframes */
 }
+
+@media screen and (max-width: 600px) {
+    .header{
+        float: none;            
+        margin-top: 0;
+        width: 100%;           
+        text-align: left;       
+    }
+
+    .header-right > a {
+        display: block;         
+        padding: 12px 0;        
+        text-align: left;       
+    }
+    
+    .main-col {
+        width: 100%;            
+        font-size: 1.2rem;      
+    }
+    
+    img {
+        max-width: 100%;        
+        height: auto;           
+        display: block;         
+        margin: 0 auto;        
+    }
+    
+    .image-row {
+        flex-direction: column; 
+        gap: 10px;
+    }
+    
+    .card {
+        padding: 15px;          
+        width: 100%;     
+    }
+}
