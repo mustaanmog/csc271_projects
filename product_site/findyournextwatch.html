@@ -39,27 +39,33 @@
                 </p>
                 <div class="card">
                     <h2 class="center-me"> Please fill out the form below! </h2>
-                        <form action="firstwebpage.html">
+                    <!-- The form has now been updated to no longer go back to the Home page upon submission. -->   
+                    <form id="watchForm" action="" method="get">
                             <p class="center">What is the color of your desired MatchWatch?
-                                <input type="radio" name="Blue" value="rock" /> Blue
-                                <input type="radio" name="Brown" value="rock"  /> Brown
-                                <input type="radio" name="Black" value="rock"  /> Black
-                                <input type="radio" name="Green" value="rock"  /> Green
-                                <input type="radio" name="White" value="rock"  /> White
+                                <input type="radio" name="color" value="Blue" /> Blue
+                                <input type="radio" name="color" value="Brown"  /> Brown
+                                <input type="radio" name="color" value="Black"  /> Black
+                                <input type="radio" name="color" value="Green"  /> Green
+                                <input type="radio" name="color" value="White"  /> White
                             </p>
 
                             <p class="center">What is your budget for your desired watch?
-                                <input type="text" name="Budget" size="15" maxlength="30"/>
+                                <input type="text" id="Budget" name="Budget"size="15" maxlength="30"/>
                             </p>
 
                             <p class="center">Where are you going with this new watch?
-                                <input type="text" name="OutingType" size="15" maxlength="30"/>
+                                <input type="text" id="OutingType" name="OutingType" size="15" maxlength="30"/>
                             </p>
                             <p class="center-me">
-                                <input type="submit" name="submit" value="Submit"/>
+                                <input type="submit" id="submit" value="Submit"/>
                             </p>
-                        </form>
+
+                            <p id="budgetDisplay"></p>
+                            <p id="priceDisplay"></p>
+                            <p id="messageDisplay"></p>
+                    </form>
             </div>
+        <script src="js/formscript.js"></script>
     </body>
 
 </html>
